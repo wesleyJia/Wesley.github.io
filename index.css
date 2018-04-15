@@ -3797,7 +3797,6 @@ html, body, #root {
 #content_2_0 { height: 100vh }
 #content_3_0 { height: 100vh }
 
-#content_5_0-video { top: 15% }
 #content_5_1 { height: 50vh }
 #content_5_2 { height: 50vh }
 #content_5_3 { height: 50vh }
@@ -4588,11 +4587,8 @@ h4 {
     text-align: center;
   }
 }
-.ServicesOne-wrapper {
-  height: calc(100vh - 144px) !important;
-}
-.ServicesOne-wrapper {
-  background-color: #f3f3f3;
+.ServicesOne #content_6_0-title {
+  margin-top: 3%;
 }
 .ServicesOne > h1,
 .ServicesOne > p {
@@ -4606,11 +4602,7 @@ h4 {
 }
 .ServicesOne-img-wrapper {
   width: 60%;
-  position: absolute;
-  top: 25%;
   margin: auto;
-  left: 0;
-  right: 0;
   padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4730,25 +4722,69 @@ h4 {
     padding: 0px;
   }
 }
-.ResourcesOne-wrapper {
-  height: calc(100vh - 144px) !important;
+.ResourcesOne-wrapper .ResourcesOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.ResourcesOne-wrapper .ResourcesOne .videoWrap {
-  display: inline-block;
-  width: 33.3%;
+.ResourcesOne-wrapper .ResourcesOne #content_5_0-title {
+  margin-top: 3%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.ResourcesOne-wrapper .ResourcesOne .one {
+  margin-top: 20px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+.ResourcesOne-wrapper .ResourcesOne .one .videoWrap {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   text-align: center;
   vertical-align: top;
-  position: absolute;
-  top: 23%;
 }
-.ResourcesOne-wrapper .ResourcesOne .marginR1 {
-  left: 0;
+.ResourcesOne-wrapper .ResourcesOne .two {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 80%;
+  height: 600px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
-.ResourcesOne-wrapper .ResourcesOne .marginR2 {
-  left: 33.3%;
-}
-.ResourcesOne-wrapper .ResourcesOne .marginR3 {
-  left: 66.6%;
+.ResourcesOne-wrapper .ResourcesOne .two .two-title {
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  margin-bottom: 10px;
 }
 .ResourcesOne-wrapper .ResourcesOne > h1,
 .ResourcesOne-wrapper .ResourcesOne > p {
@@ -4775,15 +4811,14 @@ h4 {
   height: 180px;
   width: 320px;
   position: relative;
-  top: 20%;
   margin: auto;
   -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 767px) {
   .ResourcesOne-wrapper {
-    height: 1000px  !important;
-    width: 100%  !important;
+    height: 1000px !important;
+    width: 100% !important;
     padding-top: 64px;
   }
   .ResourcesOne-wrapper .ResourcesOne {
